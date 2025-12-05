@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minesweeper</title>
+  <link rel="stylesheet" href="./styles/css/main.css">
+  <script type="module" src="./js/main.js" defer></script>
+</head>
+
+<body>
+  <main>
+    <section class="container">
+      <div class="game-stats">
+        <div class="game-stats__item">
+          <span class="game-stats__label">Mines:</span>
+          <span class="game-stats__value" id="mine-count">0</span>
+        </div>
+      </div>
+      <div class="game-board"></div>
+    </section>
+  </main>
+
+  <div class="modal-overlay">
+    <div class="modal">
+      <p class="modal__message"></p>
+      <button type="button" class="modal__btn--play-again">Play Again</button>
+    </div>
+  </div>
+</body>
+
+</html>
