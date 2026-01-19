@@ -38,8 +38,6 @@ gameboardEl.addEventListener("click", (e) => {
 
       gameboardUI.revealCellValue(cx, cy, gameboard.board[cx][cy].value);
 
-      new Audio("./audio/laser-sound.mp3").play();
-
       if (mineCoords.length === 0) {
         clearInterval(intervalId);
 
